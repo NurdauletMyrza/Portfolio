@@ -1,0 +1,67 @@
+html, body {
+    background-color: black;
+    color: #FAFAFA;
+}
+
+.title-name, .data__position, .yellow-text, .form__label {
+    color: #FFB400;
+}
+
+.data__date {
+    color: #2B2B2B;
+}
+
+.black-text, .price-card__item {
+    color: white;
+}
+
+.price-card__item_disabled, .portfolio__category-name {
+    color: #767676;
+}
+
+.left-menu, .banner, .service-card__body, .price-card__body, .review-card__body, .post-card__body, .form__body, .info__cards > *, .section__details, .footer, .right-menu {
+    background-color: #2B2B2B;
+}
+
+.page-toc__link {
+    background-color: #FFB400;
+}
+
+.page-toc__link:hover, .price-card__button {
+    background-color: #F0F0F6;
+}
+
+.page-mode-changer {
+    width: 40px;
+    height: 40px;
+    margin: -5px -5px 195px -5px;
+    background-image: url("../icons/PageModeLight.svg");
+    background-color: green;
+    border: 6px dotted yellow;
+}
+
+.page-mode-changer:hover {
+    background-image: url("../icons/PageModeDark.svg");
+    border: none;
+}
+
+.form__input, .form__textarea {
+    background-color: #767676;
+    color: black;
+    outline-color: #555555;
+}
+
+.left-menu__divider, .profile__avatar, .about__option-name {
+    background-color: #767676;
+    color: #FFB400;
+}
+
+.banner:hover, .right-menu:hover, .left-menu:hover, .footer:hover {
+    /*background-color: #767676;*/
+    background-color: #555;
+}
+
+.button:hover, button.button:hover, .form__button:hover {
+    box-shadow: 0px 1px 15px 0px rgba(255, 255, 255, 0.5);
+    color: #000000;
+}

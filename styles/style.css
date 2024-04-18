@@ -1,0 +1,152 @@
+/* ---import-fonts---------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+/* ---reset-styles---------------------------- */
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: inherit;
+    font-style: inherit;
+}
+
+/* ---global---------------------------------- */
+html, body {
+    background-color: #F0F0F6;
+    height: 100%;
+    line-height: 160%;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    color: #767676;
+    text-transform: capitalize;
+}
+
+body * {
+    transition: all 0.3s ease-out;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+body::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+body {
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: 305px auto 108px;
+    /*grid-template-columns: 305px 1030px 108px;*/
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.title-name {
+    color: #2B2B2B;
+    line-height: 123.6%;
+}
+
+.green-text {
+    color: #7EB942;
+}
+
+.yellow-text {
+    color: #FFB400;
+}
+
+.black-text {
+    color: #2B2B2B;
+}
+
+.white-text {
+    color: #FFFFFF;
+}
+
+.button {
+    color: #2B2B2B;
+    background-color: #FFB400;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background-color: white;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+button.button:hover {
+    box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.5);
+}
+
+.avatar {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-color: #F5F5F5;
+    border-radius: 50%;
+}
+
+@media (max-width: 1440px) {
+    body {
+        grid-template-columns: auto 1030px calc(50px + (100vw - 1200px) / (1440 - 1200) * 58);
+    }
+
+    @media (max-width: 1200px) {
+        body {
+            grid-template-columns: auto calc(58px + (100vw - 768px) / (1200 - 768) * 50);
+        }
+
+        @media (max-width: 768px) {
+            grid-template-columns: auto 58px;
+
+            @media (max-width: 375px) {}
+        }
+    }
+}

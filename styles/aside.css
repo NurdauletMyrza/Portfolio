@@ -1,0 +1,552 @@
+/* ---aside-bar------------------------------- */
+.left-menu {
+    width: 305px;
+    background-color: white;
+}
+
+.left-menu:hover {
+    background-color: #FAFAFA;
+}
+
+.left-menu__container {
+
+    padding: 50px 45px 25px 40px;
+    box-sizing: content-box;
+}
+
+.left-menu__divider {
+    margin: 24.25px 0;
+    height: 1.5px;
+    background-color: #F0F0F6;
+    border-radius: 0.75px;
+}
+
+.profile-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ---profile-block--------------------------- */
+.left-menu__profile {
+    text-align: center;
+}
+
+.profile {}
+
+.profile__avatar {
+    width: 150px;
+    height: 150px;
+    background-image: url("../images/PersonImage.png");
+    background-size: 90%;
+    background-position: 50% 10px;
+    margin-bottom: 31px;
+}
+
+.profile__name {
+    margin-bottom: 15px;
+}
+
+.profile__text {
+    margin-bottom: 15px;
+}
+
+.profile__social-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile__icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #FFB400;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.facebook {
+    background-image: url("../icons/Facebook.svg");
+}
+
+.instagram {
+    background-image: url("../icons/Instagram.svg");
+}
+
+.twitter {
+    background-image: url("../icons/Twitter.svg");
+}
+
+.linkedin {
+    background-image: url("../icons/Linkedin.svg");
+}
+
+.youtube {
+    background-image: url("../icons/Youtube.svg");
+}
+
+.dribbble {
+    background-image: url("../icons/Dribbble.svg");
+}
+
+/* ---about-block----------------------------- */
+.left-menu__about {}
+
+.about {}
+
+.about > *:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.about__option {}
+
+.about__option-name {
+    background-color: #FFB400;
+    padding: 0 5px;
+}
+
+.about__option-value {}
+
+/* ---languages-block------------------------- */
+.left-menu__languages {}
+
+.languages {}
+
+.languages__title {
+    margin-bottom: 15px;
+}
+
+.languages__list {}
+
+.languages__item {}
+
+/* ---skills-block---------------------------- */
+.left-menu__skills {}
+
+.skills {}
+
+.skills__title {
+    margin-bottom: 15px;
+}
+
+.skills__list {}
+
+.skills__item {}
+
+/* ---extra-skills-block---------------------- */
+.left-menu__extra-skills {}
+
+.extra-skills {}
+
+.extra-skills__title {
+    margin-bottom: 15px;
+}
+
+.extra-skills__list {}
+
+.extra-skills__item {
+    background-image: url("../icons/ItemIcon.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 30px;
+}
+
+.extra-skills__item:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+/* ---button-cv2------------------------------ */
+.left-menu__button-cv2 {}
+
+.button-cv2 {
+    text-align: center;
+    display: block;
+    padding: 13px 0;
+}
+
+.button-cv2__text {
+    background-image: url("../icons/Download.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    font-size: 14px;
+    font-weight: 600;
+    padding-right: 33px;
+}
+
+/* ---indicator-block------------------------- */
+.indicator {}
+
+.indicator:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.indicator__text {
+    margin-bottom: 5px;
+}
+
+.indicator__name {}
+
+.indicator__percentage {}
+
+.indicator__progress-bar {
+    height: 3.5px;
+    border-radius: 2px;
+    box-shadow: 0 0 0.75px #FFB400;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.indicator__progress-line {
+    width: 50%;
+    height: 2px;
+    background-color: #FFB400;
+    border-radius: 1px;
+    margin: 1px;
+}
+
+@media (max-width: 1440px) {
+    @media (min-width: 1201px) {
+        .left-menu {
+            width: auto;
+        }
+        .left-menu__container {
+            padding-left: calc(5px + (100vw - 1200px) / (1440 - 1200) * 40);
+            padding-right: calc(5px + (100vw - 1200px) / (1440 - 1200) * 35);
+        }
+        .profile-items {
+            flex-wrap: wrap;
+        }
+        .profile__avatar {
+            width: calc(100px + (100vw - 1200px) / (1440 - 1200) * 50);
+            height: calc(100px + (100vw - 1200px) / (1440 - 1200) * 50);
+        }
+        .profile__social-icons {
+            transition: none;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            gap: 5px;
+            height: calc(100px - (100vw - 1200px) / (1440 - 1200) * 76);
+        }
+        .about__option-value {
+            text-wrap: wrap;
+        }
+        .extra-skills__item {
+            padding-left: calc(20px + (100vw - 1200px) / (1440 - 1200) * 10);
+        }
+    }
+
+    @media (max-width: 1200px) {
+        /* ---aside-bar------------------------------- */
+        .left-menu {
+            position: absolute;
+            z-index: 10;
+            box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.5);
+
+            display: none;
+        }
+
+        .left-menu__container {}
+
+        .left-menu__divider {}
+
+        .profile-items {}
+
+        /* ---profile-block--------------------------- */
+        .left-menu__profile {}
+
+        .profile {}
+
+        .profile__avatar {}
+
+        .profile__name {}
+
+        .profile__text {}
+
+        .profile__social-icons {}
+
+        .profile__icon {}
+
+        .facebook {}
+
+        .instagram {}
+
+        .twitter {}
+
+        .linkedin {}
+
+        .youtube {}
+
+        .dribbble {}
+
+        /* ---about-block----------------------------- */
+        .left-menu__about {}
+
+        .about {}
+
+        .about__option {}
+
+        .about__option-name {}
+
+        .about__option-value {}
+
+        /* ---languages-block------------------------- */
+        .left-menu__languages {}
+
+        .languages {}
+
+        .languages__title {}
+
+        .languages__list {}
+
+        .languages__item {}
+
+        /* ---skills-block---------------------------- */
+        .left-menu__skills {}
+
+        .skills {}
+
+        .skills__title {}
+
+        .skills__list {}
+
+        .skills__item {}
+
+        /* ---extra-skills-block---------------------- */
+        .left-menu__extra-skills {}
+
+        .extra-skills {}
+
+        .extra-skills__title {}
+
+        .extra-skills__list {}
+
+        .extra-skills__item {}
+
+        /* ---button-cv2------------------------------ */
+        .left-menu__button-cv2 {}
+
+        .button-cv2 {}
+
+        .button-cv2__text {}
+
+        /* ---indicator-block------------------------- */
+        .indicator {}
+
+        .indicator__text {}
+
+        .indicator__name {}
+
+        .indicator__percentage {}
+
+        .indicator__progress-bar {}
+
+        .indicator__progress-line {}
+
+        /*@media (max-width: 768px) {*/
+        /*    !* ---aside-bar------------------------------- *!*/
+        /*    .left-menu {}*/
+
+        /*    .left-menu__container {}*/
+
+        /*    .left-menu__divider {}*/
+
+        /*    .profile-items {}*/
+
+        /*    !* ---profile-block--------------------------- *!*/
+        /*    .left-menu__profile {}*/
+
+        /*    .profile {}*/
+
+        /*    .profile__avatar {}*/
+
+        /*    .profile__name {}*/
+
+        /*    .profile__text {}*/
+
+        /*    .profile__social-icons {}*/
+
+        /*    .profile__icon {}*/
+
+        /*    .facebook {}*/
+
+        /*    .instagram {}*/
+
+        /*    .twitter {}*/
+
+        /*    .linkedin {}*/
+
+        /*    .youtube {}*/
+
+        /*    .dribbble {}*/
+
+        /*    !* ---about-block----------------------------- *!*/
+        /*    .left-menu__about {}*/
+
+        /*    .about {}*/
+
+        /*    .about__option {}*/
+
+        /*    .about__option-name {}*/
+
+        /*    .about__option-value {}*/
+
+        /*    !* ---languages-block------------------------- *!*/
+        /*    .left-menu__languages {}*/
+
+        /*    .languages {}*/
+
+        /*    .languages__title {}*/
+
+        /*    .languages__list {}*/
+
+        /*    .languages__item {}*/
+
+        /*    !* ---skills-block---------------------------- *!*/
+        /*    .left-menu__skills {}*/
+
+        /*    .skills {}*/
+
+        /*    .skills__title {}*/
+
+        /*    .skills__list {}*/
+
+        /*    .skills__item {}*/
+
+        /*    !* ---extra-skills-block---------------------- *!*/
+        /*    .left-menu__extra-skills {}*/
+
+        /*    .extra-skills {}*/
+
+        /*    .extra-skills__title {}*/
+
+        /*    .extra-skills__list {}*/
+
+        /*    .extra-skills__item {}*/
+
+        /*    !* ---button-cv2------------------------------ *!*/
+        /*    .left-menu__button-cv2 {}*/
+
+        /*    .button-cv2 {}*/
+
+        /*    .button-cv2__text {}*/
+
+        /*    !* ---indicator-block------------------------- *!*/
+        /*    .indicator {}*/
+
+        /*    .indicator__text {}*/
+
+        /*    .indicator__name {}*/
+
+        /*    .indicator__percentage {}*/
+
+        /*    .indicator__progress-bar {}*/
+
+        /*    .indicator__progress-line {}*/
+
+        /*    @media (max-width: 375px) {*/
+        /*        !* ---aside-bar------------------------------- *!*/
+        /*        .left-menu {}*/
+
+        /*        .left-menu__container {}*/
+
+        /*        .left-menu__divider {}*/
+
+        /*        .profile-items {}*/
+
+        /*        !* ---profile-block--------------------------- *!*/
+        /*        .left-menu__profile {}*/
+
+        /*        .profile {}*/
+
+        /*        .profile__avatar {}*/
+
+        /*        .profile__name {}*/
+
+        /*        .profile__text {}*/
+
+        /*        .profile__social-icons {}*/
+
+        /*        .profile__icon {}*/
+
+        /*        .facebook {}*/
+
+        /*        .instagram {}*/
+
+        /*        .twitter {}*/
+
+        /*        .linkedin {}*/
+
+        /*        .youtube {}*/
+
+        /*        .dribbble {}*/
+
+        /*        !* ---about-block----------------------------- *!*/
+        /*        .left-menu__about {}*/
+
+        /*        .about {}*/
+
+        /*        .about__option {}*/
+
+        /*        .about__option-name {}*/
+
+        /*        .about__option-value {}*/
+
+        /*        !* ---languages-block------------------------- *!*/
+        /*        .left-menu__languages {}*/
+
+        /*        .languages {}*/
+
+        /*        .languages__title {}*/
+
+        /*        .languages__list {}*/
+
+        /*        .languages__item {}*/
+
+        /*        !* ---skills-block---------------------------- *!*/
+        /*        .left-menu__skills {}*/
+
+        /*        .skills {}*/
+
+        /*        .skills__title {}*/
+
+        /*        .skills__list {}*/
+
+        /*        .skills__item {}*/
+
+        /*        !* ---extra-skills-block---------------------- *!*/
+        /*        .left-menu__extra-skills {}*/
+
+        /*        .extra-skills {}*/
+
+        /*        .extra-skills__title {}*/
+
+        /*        .extra-skills__list {}*/
+
+        /*        .extra-skills__item {}*/
+
+        /*        !* ---button-cv2------------------------------ *!*/
+        /*        .left-menu__button-cv2 {}*/
+
+        /*        .button-cv2 {}*/
+
+        /*        .button-cv2__text {}*/
+
+        /*        !* ---indicator-block------------------------- *!*/
+        /*        .indicator {}*/
+
+        /*        .indicator__text {}*/
+
+        /*        .indicator__name {}*/
+
+        /*        .indicator__percentage {}*/
+
+        /*        .indicator__progress-bar {}*/
+
+        /*        .indicator__progress-line {}*/
+        /*    }*/
+        /*}*/
+    }
+}
